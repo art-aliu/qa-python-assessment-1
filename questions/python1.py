@@ -35,9 +35,23 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-def one(input1, input2):
-	return ""
+def length_of_string(str1, str2):
+	if (len(str1) == len(str2)):
+		print(str1)
+		print(str2)
 
+	elif (len(str1) < len(str2)):
+		print(str2)
+	
+	else:
+		print(str1)
+
+string1 = input(str("enter First word: "))
+string2 = input(str("enter Second word: "))
+
+print("\n")
+
+length_of_string(string1, string2)
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 2>
@@ -59,8 +73,31 @@ def one(input1, input2):
 
 	# No hints for this question
 
-def two(arg1):
-	return "null"
+var1 = int(input("Enter a number: "))
+
+if var1 % 3 == 0:
+		print ("Fizz")
+elif var1 % 5 == 0:
+		print ("buzz")
+elif (var1 % 3 == 0) and (var1 % 5 == 0):
+		print ("fizzbuzz")
+else:
+		print ("null")
+
+print(var1)
+
+# var1 = int(input("Enter a number: "))
+
+# if var1 % 3:
+# 		print ("Fizz")
+# elif var1 % 5:
+# 		print ("buzz")
+# elif var1 % [3 and 5]:
+# 		print ("fizzbuzz")
+# else:
+# 		print ("null")
+
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -78,8 +115,19 @@ def two(arg1):
 
 	# How do we ignore case in a String? help(str) may offer some insight.
 
-def three(input):
-    return 0
+def isVowel(ch):
+    return ch.upper() in ['A', 'E', 'I', 'O', 'U']
+ 
+def countVowels(str):
+    count = 0
+    for i in range(len(str)):
+ 
+        if isVowel(str[i]):
+            count += 1
+    return count
+
+var1 = "Hello World"
+print(countVowels(var1))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -102,7 +150,11 @@ def three(input):
 
 
 def four(input):
-    return False
+	word=input.lower()
+	if word [(len(word)-2):] == "ei, ie":
+		return True
+	else:
+		return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -121,10 +173,19 @@ def four(input):
 
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
-def five(input):
-	return 1
+def multiplyList(List) :
+     
+    result = 1
+    for x in List:
+         result = result * x
+    return result
 
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+list = [1,2,3,4,5,6,7,8,9,10]
+print (multiplyList(list))
+
+
+#---------------------
+# --------------------------------------------------------------------------------------------------------------------------------------------- 
 
 	# <QUESTION 6>
 
@@ -220,8 +281,15 @@ def eight(arg1):
 	
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
-def nine(input):
-	return ""
+def nine(input): ("bertclivebert")
+# public static String getSandwich(String str) {
+#     int ind = str.indexOf("bread");
+#     int laind = str.lastIndexOf("bread");
+#     if((laind != -1 ) && (ind!=laind))
+#         return (str.substring(ind+5,laind)) ;
+#     return "";
+# }
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
